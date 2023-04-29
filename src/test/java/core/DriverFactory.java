@@ -27,7 +27,7 @@ public class DriverFactory {
         desiredCapabilities.setCapability("platformName", "Android");
         desiredCapabilities.setCapability("deviceName", "emulator-5554");
         desiredCapabilities.setCapability("noReset", true);
-        desiredCapabilities.setCapability(MobileCapabilityType.APP,"C:/Automacoes/AutomacaoMobile/src/test/resources/CTAppium_2_0.apk");
+        desiredCapabilities.setCapability(MobileCapabilityType.APP,"C:/Automacoes/AutomacaoMobile/src/test/resources/CTAppium_2_0.txt");
 
         try {
             driver = new AndroidDriver<MobileElement>(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);
@@ -43,7 +43,7 @@ public class DriverFactory {
       //  caps.setCapability("appium:platformVersion", "11");
         caps.setCapability("appium:deviceName", "Samsung.*Galaxy.*");
       //  caps.setCapability("appium:orientation", "portrait");
-        caps.setCapability("appium:app", "storage:filename=CTAppium_2_0.apk");
+        caps.setCapability("appium:app", "storage:filename=CTAppium_2_0.txt");
         MutableCapabilities sauceOptions = new MutableCapabilities();
         sauceOptions.setCapability("username", "oauth-soarescjunior-7fc32");
         sauceOptions.setCapability("accessKey", "d5ac9d70-2fc8-418d-ab32-44220d6243fc");
